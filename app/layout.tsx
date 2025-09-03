@@ -23,7 +23,7 @@ export default function RootLayout({
       <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable}`}>
         <div className="flex min-h-screen">
           <MainNav />
-          <main className="flex-1 bg-background [&:has(+nav)]:ml-64">
+          <main className="flex-1 ml-64 bg-gray-50">
             <Suspense fallback={null}>{children}</Suspense>
           </main>
         </div>
